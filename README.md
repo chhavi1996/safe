@@ -40,7 +40,7 @@ each encrypted volume. Additionally, each WebDAV server instance
 gets its own thread. This may change in the future.
 
 Safe's provides minimal UI so that a user can create, mount,
-and otherwise manupulate their encrypted
+and otherwise manipulate their encrypted
 volumes. No cross-platform UI layer is used, instead the UI
 re-implemented for each supported platform using the native
 system UI library.
@@ -63,7 +63,7 @@ minimize the chances of programming errors using C++11 features.
 
 * Use [RAII](https://en.wikipedia.org/wiki/RAII) 
   for C-based resources via `safe::create_deferred()` and
-  `safe::ManagedResource<>`.
+  `safe::ManagedResource()`.
 
 Since Safe is a cross-platform project, it is sometimes necessary
 to use alternative languages and their conventions. For instance,
@@ -143,10 +143,10 @@ as a git submodule.
 
 ### Windows
 
-#### Prerequisites
+#### Pre-requisites
 
 Before you can build Safe, you need the following stock
-prerequisites. Default options are fine.
+pre-requisites. Default options are fine.
 
 * MinGW32 (http://www.mingw32.org/): install both MSYS and MinGW32.
 * CMake (http://www.cmake.org/): used for building encfs
@@ -173,7 +173,7 @@ $ make Safe.exe
 
 ### Mac OS X
 
-#### Prerequisites
+#### Pre-requisites
 
 * Xcode (https://developer.apple.com/xcode/downloads/): our build system
 * CMake (http://www.cmake.org/): used for building encfs
